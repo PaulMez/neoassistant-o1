@@ -1,0 +1,79 @@
+[
+    {
+        "mode": "normal",
+        "shortcut": [
+            "<C-n>",
+            ":NvimTreeToggle<CR>"
+        ],
+        "description": "Toggle file explorer",
+        "replaces": [
+            "<C-t>"
+        ],
+        "conditions": {
+            "min_usage": 0,
+            "max_usage": 5
+        },
+        "level": 1,
+        "actual_command": "NvimTreeToggle"
+    },
+    {
+        "mode": "insert",
+        "shortcut": [
+            "jj"
+        ],
+        "description": "Exit insert mode",
+        "replaces": [
+            "<Esc>"
+        ],
+        "conditions": {
+            "min_usage": 0,
+            "max_usage": 5
+        },
+        "level": 1,
+        "actual_command": "stopinsert"
+    },
+    {
+        "mode": "visual",
+        "shortcut": [
+            "<leader>y"
+        ],
+        "description": "Yank to system clipboard",
+        "replaces": [
+            "y"
+        ],
+        "conditions": {
+            "min_usage": 0,
+            "max_usage": 10
+        },
+        "level": 2,
+        "actual_command": "call system('xclip -selection clipboard')"
+    },
+    {
+        "mode": "normal",
+        "shortcut": [
+            "w"
+        ],
+        "description": "Jump to next word",
+        "replaces": [],
+        "conditions": {
+            "min_usage": 0,
+            "max_usage": 100
+        },
+        "level": 2,
+        "actual_command": "w"
+    },
+    {
+        "mode": "normal",
+        "shortcut": [
+            "e"
+        ],
+        "description": "Jump to end of word",
+        "replaces": [],
+        "conditions": {
+            "min_usage": 0,
+            "max_usage": 100
+        },
+        "level": 2,
+        "actual_command": "e"
+    }
+]
